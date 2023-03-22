@@ -1,0 +1,92 @@
+/* reset css start*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*reset css end*/
+
+/*CSS All*/
+*{
+    box-sizing: border-box;
+}
+
+/*CSS Start*/
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*Font Family */
+
+@font-face {
+    font-family: 'WorkSans';
+    src:  url('../assets/fonts/AnyConv.com__WorkSans-Regular.woff') format('woff'),
+          url('../assets/fonts/AnyConv.com__WorkSans-Regular.woff2') format('woff2');
+}
+
+.head-sec{
+    margin-top: 63px;
+    margin-left: 123px;
+    display: flex;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 44px;
+}
+.link{
+    text-decoration: none;
+    font-family: WorkSans;
+    font-size: 18px;
+    line-height: 21px;
+    color: #314584;
+    font-weight: 600;
+}
+.link:hover{
+    color: black;
+}
