@@ -66,27 +66,131 @@ table {
           url('../assets/fonts/AnyConv.com__WorkSans-Regular.woff2') format('woff2');
 }
 
-.head-sec{
-    margin-top: 63px;
-    margin-left: 123px;
-    display: flex;
-    align-items: center;
+/*Cols Classes*/
+
+.col-6{
+    width: calc(100%/2);
 }
+.col-4{
+    width: calc(100%4);
+}
+
+/*Font-Size*/
+.fs-14{
+    font-size: 14px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-27{
+    font-size: 27px;
+}
+.fs-45{
+    font-size: 45px;
+}
+.fs-48{
+    font-size: 48px;
+}
+.fs-73{
+    font-size: 73px;
+}
+
+/*Colors*/
+
+.primary-blue{
+    color: #314584;
+}
+.primary-orange{
+    color: #ff3946;
+}
+.bg-og{
+    background: #ff3946;
+}
+.txt-white{
+    color: #ffffff;
+}
+.bg-white{
+    background: #ffffff;
+}
+
+/*Font-Family*/
+.ff-work-sans{
+    font-family: WorkSans;
+}
+
+/*Display Properties*/
 
 .flex{
     display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-start{
     justify-content: flex-start;
+}
+.justify-end{
+    justify-content: end;
+}
+.align-center{
     align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+/*gap*/
+.g-44{
     gap: 44px;
 }
+.pt-100{
+    padding-top: 100px;
+}
+.fw-600{
+    font-weight: 600;
+}
+.head-sec{
+    margin-top: 50px;
+    margin-left: 123px;
+}
+
 .link{
     text-decoration: none;
+}
+
+.link:hover{
+    color: black;
+}
+
+.btn-contact{
+    padding: 16px 68px 18px 34px;
+    background: #ffff;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 5px rgba(25,45,51,0.15));
+    background-color: #ffffff;
+    border: none;
     font-family: WorkSans;
     font-size: 18px;
     line-height: 21px;
-    color: #314584;
     font-weight: 600;
+    position: relative;
 }
-.link:hover{
-    color: black;
+.btn-contact:hover{
+    cursor: pointer;
+    background: #f54b57;
+    color: #ffff;
+}
+.btn-contact::after{
+    content: '';
+    width: 30px;
+    height: 19px;
+    background: url('../assets/images/Arrow.svg');
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btn-contact:hover::after{
+    background: url('../assets/images/Arrow_hover.svg');
 }
