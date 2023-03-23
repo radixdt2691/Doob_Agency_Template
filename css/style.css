@@ -96,7 +96,9 @@ table {
 }
 
 /*Colors*/
-
+.txt-gray{
+    color: #6e757a;
+}
 .primary-blue{
     color: #314584;
 }
@@ -138,12 +140,46 @@ table {
 .flex-col{
     flex-direction: column;
 }
+
+/*Position*/
+.ps-abs{
+    position: absolute;
+}
+.ps-rel{
+    position: relative;
+}
+/*Border None & Border-Radius 0*/
+.border-0{
+    border: none;
+}
+.br-0{
+    border-radius: 0;
+    filter: none;
+}
+.bg-transperent{
+    background: transparent;
+}
+
 /*gap*/
 .g-44{
     gap: 44px;
 }
-.pt-100{
-    padding-top: 100px;
+.g-39{
+    gap: 39px;
+}
+.pt-110{
+    padding-top: 110px;
+}
+
+.mt-44{
+    margin-top: 44px;
+}
+.mt-42{
+    margin-top: 42px;
+}
+
+.lh-30{
+    line-height: 30px;
 }
 .fw-600{
     font-weight: 600;
@@ -151,8 +187,12 @@ table {
 .head-sec{
     margin-top: 50px;
     margin-left: 123px;
+    margin-right: 177px;
 }
-
+.main-heading{
+    letter-spacing: 1px;
+    line-height: 96px;
+}
 .link{
     text-decoration: none;
 }
@@ -193,4 +233,35 @@ table {
 }
 .btn-contact:hover::after{
     background: url('../assets/images/Arrow_hover.svg');
+}
+
+.btn-about{
+    padding: 16px 40px;
+    border: none;
+    border-radius: 25px;
+    filter: drop-shadow(0px 5px 5px rgba(255,57,70,0.15));
+    cursor: pointer;
+}
+
+.btn-about:hover{
+    background: #314584;
+    color: #ffffff;
+}
+.touch:hover{
+    background: transparent;
+    color: #ff3946;
+}
+
+.img::before{
+    content: '';
+    width: 925px;
+    height: 988px;
+    background: url('../assets/images/Bg_Shape.svg');
+    position: absolute;
+    top: 54%;
+    right: 0;
+    transform: translate(0,-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
