@@ -200,6 +200,9 @@ table {
 .pt-210{
     padding-top: 210px;
 }
+.pt-71{
+    padding-top: 71px;
+}
 .pb-86{
     padding-bottom: 86px;
 }
@@ -221,6 +224,9 @@ table {
 }
 .mt-23{
     margin-top: 23px;
+}
+.pb-54{
+    padding-bottom: 54px;
 }
 .lh-24{
     line-height: 24px;
@@ -398,4 +404,7 @@ img{
     height: 120px;
     background-color: #f4fafe;
     border: none;
+}
+.icon{
+    color: #ffffff;
 }
