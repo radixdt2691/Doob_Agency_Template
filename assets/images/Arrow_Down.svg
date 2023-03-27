@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" width="9" height="6">
+	<title>Arrow Down</title>
+	<defs>
+		<image width="9" height="6" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAAXNSR0IArs4c6QAAAINJREFUGFdjNHBtNWBk+H+AgYGBnwEdMDJsPL+rJoARJG7k0lLwn5GhH03Nx/+//yhcONDwAawIBAzdWjYw/Gfwh/H////veGFPLcgGBrgiA4cGAUZWlgcgaxkZGCee211dANMAVwQSMHBpdmBkZJxwfneNAbLVKIrACh0aBEDuQFYEAEQ5JgeJ/ARcAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Arrow Down" class="new" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
