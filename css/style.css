@@ -378,6 +378,9 @@ img{
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+.portfolio .flex .col-4 a figure > img{
+    object-fit: cover;
+}
 figure{
     overflow: hidden;
 }
@@ -466,7 +469,7 @@ figure{
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .head-sec{
         gap: 20px;
     }
@@ -485,9 +488,6 @@ figure{
     .img::before{
         content: unset;
     }
-}
-
-@media screen and (max-width: 1024px) {
     .banner{
         margin: 10px;
     }
@@ -516,8 +516,11 @@ figure{
         width: 100%;
     }
     .portfolio .flex > .min-w-px1{
-       min-width: 321px;
+       min-width: 313px;
     } 
+    .portfolio .mt-31{
+        margin-top: 8px;
+    }
     .news .flex{
         flex-direction: column;
         gap: 50px;
@@ -529,13 +532,65 @@ figure{
         min-width: 471px;
     }
     .col-12 > input{
-        min-width: 970px;
+        min-width: 1056px;
     }
     .footer .flex > ul{
         white-space: nowrap;
     }
 }
-@media screen and (max-width:768px  ) {
+
+@media screen and (max-width: 991px) {
+    .banner{
+        margin: 10px;
+    }
+    .card,.img-txt,.portfolio,.news,.contact{
+        margin: 15px;
+    }
+    .card::before,.img-txt::before,.portfolio::before,.news::before{
+        content: unset;
+    }
+    .card .row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card .row > .col-4{
+        width: unset;
+    }
+    .img-txt .flex{
+        flex-direction: column;
+        margin: 15px;
+        
+    }
+    .img-txt .flex{
+        gap: 100px;
+    }
+    .img-txt .flex > .col-6{
+        width: 100%;
+    }
+    .portfolio .flex > .min-w-px1{
+       min-width: 213px;
+    } 
+    .portfolio .mt-31{
+        margin-top: 8px;
+    }
+    .news .flex{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .news .flex .col-4{
+        width: 100%;
+    }
+    .contact .form .col-6 > input{
+        min-width: 471px;
+    }
+    .col-12 > input{
+        min-width: 955px;
+    }
+    .footer .flex > ul{
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width:768px) {
     .banner .row  .img > .img-vector{
         margin-left: 50px;
     }
@@ -560,5 +615,50 @@ figure{
     }
     .col-12 > input {
         min-width: 720px;
+    }
+}
+@media screen and (max-width:576px) {
+    .banner .row  .img > .img-vector{
+        margin-left: 5px;
+    }
+    .portfolio .flex > .col-4{
+        min-width: 121px;
+    }
+    .contact .form .col-6 > input {
+        min-width: 250px;
+    }
+    .col-12 > input {
+        min-width: 535px;
+    }
+    .footer .flex > ul{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:320px) {
+    .card .row .min-w-px{
+        min-width: 257px;
+    }
+    .card .row .col-4{
+        min-width: 221px;
+    }
+    .portfolio .flex{
+        flex-direction: column;
+    }
+    .portfolio .flex .col-4{
+        width: 100%;
+    }
+    .news .flex .min-w-px1{
+        min-width: 271px;
+    }
+    .contact .flex{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .contact .form .col-6 > input {
+        min-width: 290px;
+    }
+    .col-12 > input {
+        min-width: 290px;
     }
 }
