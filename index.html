@@ -1,206 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doob Agency Template</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <!-- Header Section Start -->
     <header class="head-sec flex align-center">
-        <div class="img-nav">
-            <a href="#" title="Doob"><img src="./assets/images/logo.svg" width="69" height="30" alt="logo"></a>
-        </div>
+      <div class="img-nav">
+        <a href="#" title="Doob"
+          ><img
+            src="./assets/images/logo.svg"
+            width="69"
+            height="30"
+            alt="logo"
+        /></a>
+      </div>
 
-        <div class="container">
-            <nav class="flex">
-                <ul class="flex justify-start align-center g-44 col-6">
-                    <li><a class="link ff-work-sans fs-18 fw-600 primary-blue" href="#" title="Home">Home.</a></li>
-                    <li><a class="link ff-work-sans fs-18 fw-600 primary-blue" href="#" title="About Us">About Us.</a></li>
-                    <li><a class="link ff-work-sans fs-18 fw-600 primary-blue"href="#" title="Portfolio">Portfolio.</a></li>
-                    <li><a class="link ff-work-sans fs-18 fw-600 primary-blue" href="#" title="Blog">Blog.</a></li>
-                    <li><a class="link ff-work-sans fs-18 fw-600 primary-blue" href="#" title="Contact">Contact us.</a></li>
-                </ul>
-                <div class="flex justify-end align-center g-44 col-6">
-                    <ul class="lan ps-rel">
-                        <li><a href="#" class="link ff-work-sans fs-18 fw-600 primary-blue" title="Language">EN</a></li>
-                    </ul>
-                    <button class="btn-contact">Contact Us</button>
-                </div>  
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="flex main-list" id="mainListDiv">
+          <ul class="flex justify-start align-center g-44 col-6">
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 primary-blue"
+                href="#"
+                title="Home"
+                >Home.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 primary-blue"
+                href="#"
+                title="About Us"
+                >About Us.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 primary-blue"
+                href="#"
+                title="Portfolio"
+                >Portfolio.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 primary-blue"
+                href="#"
+                title="Blog"
+                >Blog.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 primary-blue"
+                href="#"
+                title="Contact"
+                >Contact us.</a
+              >
+            </li>
+          </ul>
+          <div class="flex justify-end align-center g-44 col-6">
+            <ul class="lan ps-rel">
+              <li>
+                <a
+                  href="#"
+                  class="link ff-work-sans fs-18 fw-600 primary-blue"
+                  title="Language"
+                  >EN</a
+                >
+              </li>
+            </ul>
+            <button class="btn-contact bg-white">Contact Us</button>
+          </div>
+        </nav>
+      </div>
+      <div class="media_button">
+        <button class="main_media_button" id="mediaButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
     <!-- Header Section End -->
 
     <!-- Banner Section Start -->
     <section class="banner pt-110 ps-rel">
-        <div class="container">
-            <div class="row flex">
-                <div class="content col-6 flex align-center">
-                    <div class="flex flex-col">
-                        <h1 class="fs-73 fw-600 primary-blue ff-work-sans main-heading">The Spirit of Digital Agency.</h1>
-                        <p class="fs-18 txt-gray ff-work-sans mt-44 lh-30">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                        <div class="flex align-center mt-42 g-39">
-                            <button class="btn-about bg-og txt-white fs-18 ff-work-sans fw-600">More About Us</button>
-                            <button class="border-0 br-0 bg-transperent btn-about primary-blue fs-18 fw-600 touch">Get in Touch</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 img">
-                    <img src="./assets/images/vector.svg" width="680" height="680" alt="vector" class="img-vector">
-                </div>
-            </div>  
+      <div class="container">
+        <div class="row flex">
+          <div class="content col-6 flex align-center">
+            <div class="flex flex-col">
+              <h1 class="fs-73 fw-600 primary-blue ff-work-sans main-heading">
+                The Spirit of Digital Agency.
+              </h1>
+              <p class="fs-18 txt-gray ff-work-sans mt-44 lh-30">
+                Vestibulum ac diam sit amet quam vehicula elementum amet est on
+                dui. Nulla porttitor accumsan tincidunt.
+              </p>
+              <div class="flex align-center mt-42 g-39">
+                <button
+                  class="btn-about bg-og txt-white fs-18 ff-work-sans fw-600"
+                >
+                  More About Us
+                </button>
+                <button
+                  class="border-0 br-0 bg-transperent btn-about primary-blue fs-18 fw-600 touch"
+                >
+                  Get in Touch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 img">
+            <img
+              src="./assets/images/vector.svg"
+              width="680"
+              height="680"
+              alt="vector"
+              class="img-vector"
+            />
+          </div>
         </div>
+      </div>
     </section>
     <!-- Banner Section End -->
 
     <!-- card section start -->
     <section class="card pt-210 ps-rel">
-        <div class="container">
-            <div class="row flex g-78">
-                <div class="col-4 min-w-px">
-                    <h2 class="fs-45 fw-600 primary-blue ff-work-sans lh-65">
-                        Anything you need,we&#39;ve <br>got you covered
-                    </h2>
-                    <button class="btn-about bg-og txt-white fs-14 ff-work-sans fw-600 mt-44">Get in Touch</button>
-                </div>
-                <div class="col-4 card-details">
-                    <img src="./assets/images/Icon.png" alt="icon" width="57" height="56">
-                    <h2 class="fs-27 lh-30 fw-600 ff-work-sans primary-blue mt-62">Web & Graphic<br>Design</h2>
-                    <p class="fs-14 lh-24 ff-work-sans primary-blue mt-39">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                </div>
-                <div class="col-4 card-details">
-                    <img src="./assets/images/Icon1.png" alt="icon" width="57" height="56">
-                    <h2 class="fs-27 lh-30 fw-600 ff-work-sans primary-blue mt-62">Web & App Development</h2>
-                    <p class="fs-14 lh-24 ff-work-sans primary-blue mt-39">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                </div>
+      <div class="container">
+        <div class="row flex g-69">
+          <div class="col-4 min-w-px">
+            <h2 class="fs-45 fw-600 primary-blue ff-work-sans lh-65">
+              Anything you need,we&#39;ve <br />got you covered
+            </h2>
+            <button
+              class="btn-about bg-og txt-white fs-14 ff-work-sans fw-600 mt-44"
+            >
+              Get in Touch
+            </button>
+          </div>
+          <div class="card-inside g-78">
+            <div class="col-4 card-details bg-white">
+              <img
+                src="./assets/images/Icon.png"
+                alt="icon"
+                width="57"
+                height="56"
+              />
+              <h2 class="fs-27 lh-30 fw-600 ff-work-sans primary-blue mt-62">
+                Web & Graphic<br />Design
+              </h2>
+              <p class="fs-14 lh-24 ff-work-sans primary-blue mt-39">
+                Vestibulum ac diam sit amet quam vehicula elementum amet est on
+                dui. Nulla porttitor accumsan tincidunt.
+              </p>
             </div>
+            <div class="col-4 card-details bg-white">
+              <img
+                src="./assets/images/Icon1.png"
+                alt="icon"
+                width="57"
+                height="56"
+              />
+              <h2 class="fs-27 lh-30 fw-600 ff-work-sans primary-blue mt-62">
+                Web & App Development
+              </h2>
+              <p class="fs-14 lh-24 ff-work-sans primary-blue mt-39">
+                Vestibulum ac diam sit amet quam vehicula elementum amet est on
+                dui. Nulla porttitor accumsan tincidunt.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- card section end -->
 
     <!-- img-text section start -->
     <section class="img-txt pt-210 ps-rel">
-        <div class="container">
-            <div class="flex g-218">
-                <div class="col-6">
-                    <img src="./assets/images/img.svg" alt="img" width="627" height="375">
-                </div>
-                <div class="col-6">
-                    <p class="fs-18 primary-orange fw-600 ff-work-sans">OUR COMPANY</p>
-                    <h2 class="mt-42 ff-work-sans primary-blue fs-48 lh-65 fw-600">Some Fine Words About Us</h2>
-                    <p class="fs-18 primary-blue mt-62 fw-600 lh-30 ff-work-sans">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit amet.
-                        Quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="flex g-218">
+          <div class="col-6">
+            <img
+              src="./assets/images/img.svg"
+              alt="img"
+              width="627"
+              height="375"
+            />
+          </div>
+          <div class="col-6">
+            <p class="fs-18 primary-orange fw-600 ff-work-sans">OUR COMPANY</p>
+            <h2 class="mt-42 ff-work-sans primary-blue fs-48 lh-65 fw-600">
+              Some Fine Words About Us
+            </h2>
+            <p class="fs-18 primary-blue mt-62 fw-600 lh-30 ff-work-sans">
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui. Nulla porttitor accumsan tincidunt.Vestibulum ac diam sit
+              amet. Quam vehicula elementum amet est on dui. Nulla porttitor
+              accumsan tincidunt.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- img-text section end -->
 
     <!-- Portfolio Section Start -->
     <section class="portfolio pt-210 ps-rel">
-        <div class="container">
-            <h2 class="primary-blue fs-48 ff-work-sans lh-65 fw-600">See some of our <br> Creative work.</h2>
-            <div class="flex align-start justify-sb mt-62">
-                <div class="col-4 min-w-px1">
-                    <a class="zin" href="#" id = "zoomIn"><figure><img src="./assets/images/Layer35.png" alt="img" width="371" height="281"></figure></a>
-                </div>
-                <div class="col-4 min-w-px1">
-                    <a class="zin" href="#" id = "zoomIn"><figure><img src="./assets/images/Layer36.png" alt="img" width="371" height="281"></figure></a>
-                </div>
-                <div class="col-4 min-w-px1 ">
-                    <a class="zin" href="#" id = "zoomIn"><figure><img src="./assets/images/Layer38.png" alt="img" width="371" height="281"></figure></a>
-                </div>
-            </div>
-            <div class="flex align-start justify-sb mt-31">
-                <div class="col-4 min-w-px1">
-                    <a class="zin" href="#" id = "zoomIn"><figure><img src="./assets/images/Layer39.png" alt="img" width="371" height="281"></figure></a>
-                </div>
-                <div class="col-4 min-w-px1">
-                    <a class="zin" href="#" id = "zoomIn"><figure><img src="./assets/images/Layer40.png" alt="img" width="371" height="281"></figure></a>
-                </div>
-                <div class="col-4 min-w-px1 ">
-                    <a class="zin" href="#" id = "zoomIn"><figure><img src="./assets/images/Layer41.png" alt="img" width="371" height="281"></figure></a>
-                </div>
-            </div>
-            <a class="link" href="#" title="see more"><p class="fs-18 primary-orange ff-work-sans fw-600 mx-auto txt-center mt-44">See More of These</p></a>
+      <div class="container">
+        <h2 class="primary-blue fs-48 ff-work-sans lh-65 fw-600">
+          See some of our <br />
+          Creative work.
+        </h2>
+        <div class="flex align-start justify-sb mt-62">
+          <div class="col-4 min-w-px1">
+            <a class="zin" href="#" id="zoomIn"
+              ><figure>
+                <img
+                  src="./assets/images/Layer35.png"
+                  alt="img"
+                  width="371"
+                  height="281"
+                /></figure
+            ></a>
+          </div>
+          <div class="col-4 min-w-px1">
+            <a class="zin" href="#" id="zoomIn"
+              ><figure>
+                <img
+                  src="./assets/images/Layer36.png"
+                  alt="img"
+                  width="371"
+                  height="281"
+                /></figure
+            ></a>
+          </div>
+          <div class="col-4 min-w-px1">
+            <a class="zin" href="#" id="zoomIn"
+              ><figure>
+                <img
+                  src="./assets/images/Layer38.png"
+                  alt="img"
+                  width="371"
+                  height="281"
+                /></figure
+            ></a>
+          </div>
         </div>
+        <div class="flex align-start justify-sb mt-31">
+          <div class="col-4 min-w-px1">
+            <a class="zin" href="#" id="zoomIn"
+              ><figure>
+                <img
+                  src="./assets/images/Layer39.png"
+                  alt="img"
+                  width="371"
+                  height="281"
+                /></figure
+            ></a>
+          </div>
+          <div class="col-4 min-w-px1">
+            <a class="zin" href="#" id="zoomIn"
+              ><figure>
+                <img
+                  src="./assets/images/Layer40.png"
+                  alt="img"
+                  width="371"
+                  height="281"
+                /></figure
+            ></a>
+          </div>
+          <div class="col-4 min-w-px1">
+            <a class="zin" href="#" id="zoomIn"
+              ><figure>
+                <img
+                  src="./assets/images/Layer41.png"
+                  alt="img"
+                  width="371"
+                  height="281"
+                /></figure
+            ></a>
+          </div>
+        </div>
+        <a class="link" href="#" title="see more"
+          ><p
+            class="fs-18 primary-orange ff-work-sans fw-600 mx-auto txt-center mt-44"
+          >
+            See More of These
+          </p></a
+        >
+      </div>
     </section>
     <!-- Portfolio Section End -->
 
     <!-- News Section Start -->
     <section class="news pt-210 ps-rel">
-        <div class="container">
-            <p class="fs-18 primary-orange ff-work-sans fw-600">BLOG STORIES</p>
-            <h2 class="fs-48 ff-work-sans primary-blue fw-600 mt-31">Check Our News</h2>
-            <div class="flex align-start justify-sb mt-62">
-                <div class="col-4 min-w-px1 bg-og news-inside">
-                    <p class="fs-18 txt-white ff-work-sans fw-600">New Adventure</p>
-                    <p class="fs-18 txt-white ff-work-sans mt-23">17 March 2019</p>
-                    <p class="fs-18 txt-white ff-work-sans lh-30 mt-44">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                </div>
-                <div class="col-4 min-w-px1 bg-white news-inside">
-                    <p class="fs-18 primary-blue ff-work-sans fw-600">New Adventure</p>
-                    <p class="fs-18 txt-gray ff-work-sans mt-23">17 March 2019</p>
-                    <p class="fs-18 primary-blue ff-work-sans lh-30 mt-44">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                </div>
-                <div class="col-4 min-w-px1 bg-white news-inside">
-                    <p class="fs-18 primary-blue ff-work-sans fw-600">New Adventure</p>
-                    <p class="fs-18 txt-gray ff-work-sans mt-23">17 March 2019</p>
-                    <p class="fs-18 primary-blue ff-work-sans lh-30 mt-44">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                </div>
-            </div>
+      <div class="container">
+        <p class="fs-18 primary-orange ff-work-sans fw-600">BLOG STORIES</p>
+        <h2 class="fs-48 ff-work-sans primary-blue fw-600 mt-31">
+          Check Our News
+        </h2>
+        <div class="flex align-start justify-sb mt-62">
+          <div class="col-4 min-w-px1 bg-og news-inside">
+            <p class="fs-18 txt-white ff-work-sans fw-600">New Adventure</p>
+            <p class="fs-18 txt-white ff-work-sans mt-23">17 March 2019</p>
+            <p class="fs-18 txt-white ff-work-sans lh-30 mt-44">
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui. Nulla porttitor accumsan tincidunt.
+            </p>
+          </div>
+          <div class="col-4 min-w-px1 bg-white news-inside">
+            <p class="fs-18 primary-blue ff-work-sans fw-600">New Adventure</p>
+            <p class="fs-18 txt-gray ff-work-sans mt-23">17 March 2019</p>
+            <p class="fs-18 primary-blue ff-work-sans lh-30 mt-44">
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui. Nulla porttitor accumsan tincidunt.
+            </p>
+          </div>
+          <div class="col-4 min-w-px1 bg-white news-inside">
+            <p class="fs-18 primary-blue ff-work-sans fw-600">New Adventure</p>
+            <p class="fs-18 txt-gray ff-work-sans mt-23">17 March 2019</p>
+            <p class="fs-18 primary-blue ff-work-sans lh-30 mt-44">
+              Vestibulum ac diam sit amet quam vehicula elementum amet est on
+              dui. Nulla porttitor accumsan tincidunt.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- News Section End -->
 
     <!-- Contact us Section Start -->
     <section class="contact pt-210 pb-86 ps-rel">
-        <div class="container">
-            <p class="fs-18 primary-orange ff-work-sans fw-600">CONTACT US</p>
-            <h2 class="fs-48 ff-work-sans primary-blue fw-600 mt-31">Get in Touch</h2>
-            <div class="flex justify-evenly align-center mt-44 form">
-                <div class="col-6">
-                    <input type="email" name="email" placeholder="Your Email">
-                </div>
-                <div class="col-6">
-                    <input type="text" name="sub" placeholder="Subject">
-                </div>
-            </div>
-            <div class="col-12 mt-31">
-                <input type="text" name="msg" placeholder="Message here...">
-            </div>
-
-            <button class="flex justify-center btn-about bg-og txt-white fs-14 ff-work-sans fw-600 mt-62 mx-auto">Send Message</button>
+      <div class="container">
+        <p class="fs-18 primary-orange ff-work-sans fw-600">CONTACT US</p>
+        <h2 class="fs-48 ff-work-sans primary-blue fw-600 mt-31">
+          Get in Touch
+        </h2>
+        <div class="flex justify-evenly align-center mt-44 form">
+          <div class="col-6">
+            <input type="email" name="email" placeholder="Your Email" />
+          </div>
+          <div class="col-6">
+            <input type="text" name="sub" placeholder="Subject" />
+          </div>
         </div>
+        <div class="col-12 mt-31">
+          <input type="text" name="msg" placeholder="Message here..." />
+        </div>
+
+        <button
+          class="flex justify-center btn-about bg-og txt-white fs-14 ff-work-sans fw-600 mt-62 mx-auto"
+        >
+          Send Message
+        </button>
+      </div>
     </section>
     <!-- Contact us Section End -->
 
     <!-- Footer Start -->
     <section class="footer bg-primary">
-        <div class="container">
-            <p class="fs-18 txt-white txt-center ff-work-sans pt-71">DOOB</p>
-        <h2 class="fs-48 lh-65 ff-work-sans txt-center primary-orange mt-23">CREATIVITY ABOVE</h2>
+      <div class="container">
+        <p class="fs-18 txt-white txt-center ff-work-sans pt-71 mx-auto">DOOB</p>
+        <h2 class="fs-48 lh-65 ff-work-sans txt-center primary-orange mt-23">
+          CREATIVITY ABOVE
+        </h2>
         <div class="flex justify-center mt-44">
-            <ul class="flex justify-center align-center g-44 col-6">
-                <li><a class="link ff-work-sans fs-18 fw-600 txt-white" href="#" title="Home">Home.</a></li>
-                <li><a class="link ff-work-sans fs-18 fw-600 txt-white" href="#" title="About Us">About Us.</a></li>
-                <li><a class="link ff-work-sans fs-18 fw-600 txt-white"href="#" title="Portfolio">Portfolio.</a></li>
-                <li><a class="link ff-work-sans fs-18 fw-600 txt-white" href="#" title="Blog">Blog.</a></li>
-                <li><a class="link ff-work-sans fs-18 fw-600 txt-white" href="#" title="Contact">Contact us.</a></li>
-            </ul>
-        </div> 
-        <p class="fs-14 txt-white txt-center ff-work-sans mt-44">&#169; 2019 - Doob,All Right Reserved</p>
+          <ul class="flex justify-center align-center g-44 col-6">
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 txt-white"
+                href="#"
+                title="Home"
+                >Home.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 txt-white"
+                href="#"
+                title="About Us"
+                >About Us.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 txt-white"
+                href="#"
+                title="Portfolio"
+                >Portfolio.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 txt-white"
+                href="#"
+                title="Blog"
+                >Blog.</a
+              >
+            </li>
+            <li>
+              <a
+                class="link ff-work-sans fs-18 fw-600 txt-white"
+                href="#"
+                title="Contact"
+                >Contact us.</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p class="fs-14 txt-white txt-center ff-work-sans mt-44 mx-auto">
+          &#169; 2019 - Doob,All Right Reserved
+        </p>
         <div class="flex justify-center g-78 align-center mt-44 pb-54">
-            <a href="#" title="Social Links"><i class="fa fa-facebook icon fa-2x" aria-hidden="true"></i></a>
-            <a href="#" title="Social Links"><i class="fa fa-twitter icon fa-2x" aria-hidden="true"></i></a>
-            <a href="#" title="Social Links"><i class="fa fa-dribbble icon fa-2x" aria-hidden="true"></i></a>
+          <a href="#" title="Social Links"
+            ><i class="fa fa-facebook icon fa-2x" aria-hidden="true"></i
+          ></a>
+          <a href="#" title="Social Links"
+            ><i class="fa fa-twitter icon fa-2x" aria-hidden="true"></i
+          ></a>
+          <a href="#" title="Social Links"
+            ><i class="fa fa-dribbble icon fa-2x" aria-hidden="true"></i
+          ></a>
         </div>
-        </div>
+      </div>
     </section>
     <!-- Footer End -->
-</body>
+    <script>
+      var mainListDiv = document.getElementById("mainListDiv"),
+        mediaButton = document.getElementById("mediaButton");
+
+      mediaButton.onclick = function () {
+        "use strict";
+
+        mainListDiv.classList.toggle("show_list");
+        mediaButton.classList.toggle("active");
+      };
+    </script>
+  </body>
 </html>
