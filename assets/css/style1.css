@@ -677,11 +677,11 @@ textarea {
 .news .slick-slider .slick-slide , .portfolio .slick-slider .slick-slide{
     margin: 10px;
 }
-.news .slick-slider .slick-list , .portfolio .slick-slider .slick-list {
+.slick-slider .slick-list {
     padding: 10px 0px;
 }
 
-.news .slick-slider .slick-next , .portfolio .slick-slider .slick-next {
+.slick-slider .slick-next {
     right: 15px;
     top: -106px;
     z-index: 5;
@@ -689,7 +689,7 @@ textarea {
     height: 21px;
 }
 
-.news .slick-slider .slick-prev , .portfolio .slick-slider .slick-prev {
+.slick-slider .slick-prev {
     left: 92%;
     top: -106px;
     z-index: 5;
@@ -697,6 +697,11 @@ textarea {
     height: 20px;
 }
 
+
+.slick-slider .slick-prev:before, 
+.slick-slider .slick-next:before {
+    color: #314584;
+}
 
 
 /* Media Query For Font-Size and Header Section */

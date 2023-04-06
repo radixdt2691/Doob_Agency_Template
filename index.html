@@ -600,8 +600,12 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-      $(".blog-slider").slick({
+
+      $(document).ready(function(){
+       var blogslider =  $(".blog-slider").slick({
+        arrows: true,
         dots: false,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow:"<img class='slick-prev' src='./assets/images/prev.svg'></img>",
@@ -630,8 +634,10 @@
           },
         ],
       });
-      $('.portfolio-slider').slick({
+
+     var portfolio =  $('.portfolio-slider').slick({
         arrows: true,
+        infinite: false,
         dots: false,
         asNavFor: '.portfolio-slider1',
         slidesToShow: 3,
@@ -662,8 +668,9 @@
           },
         ],
       });
-      $('.portfolio-slider1').slick({
+     var portfolio1 =  $('.portfolio-slider1').slick({
         arrows: false,
+        infinite: false,
         dots: false,
         asNavFor: '.portfolio-slider',
         slidesToShow: 3,
@@ -692,6 +699,53 @@
           },
         ],
       })
+
+     
+      $('.slick-disabled').css("width","20px");
+      
+      portfolio.on('afterChange', function(event, slick, currentSlide) {  	
+      console.log(currentSlide);
+        //If we're on the first slide hide the Previous button and show the Next
+        if (currentSlide === 0) {
+          $('.slick-next').show();
+          $('.slick-next').css("width","35px");
+          $('.slick-disabled').css("width","20px");
+        }
+        else {
+          $('.slick-prev').show();
+        }
+        
+        //If we're on the last slide hide the Next button.
+        if (currentSlide === 3) {
+          $('.slick-next').css("width","20px");
+          $('.slick-prev').css("width","35px");
+        }
+      });
+
+      blogslider.on('afterChange', function(event, slick, currentSlide) {  	
+      console.log(currentSlide);
+        //If we're on the first slide hide the Previous button and show the Next
+        if (currentSlide === 0) {
+          $('.slick-next').show();
+          $('.slick-next').css("width","35px");
+          $('.slick-disabled').css("width","20px");
+        }
+        else {
+          $('.slick-prev').show();
+        }
+        
+        //If we're on the last slide hide the Next button.
+        if (currentSlide === 3) {
+          $('.slick-next').css("width","20px");
+          $('.slick-prev').css("width","35px");
+        }
+      });
+
+      })
+      
+      
+    
+     
     </script>
   </body>
 </html>
